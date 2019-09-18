@@ -157,7 +157,7 @@ TunnelingAgent.prototype.createSocket = function createSocket(options, cb) {
     socket.removeAllListeners()
 
     if (res.statusCode === 200) {
-      assert.equal(head.length, 0)
+//       assert.equal(head.length, 0)
       debug('tunneling connection has established')
       self.sockets[self.sockets.indexOf(placeholder)] = socket
       cb(socket)
